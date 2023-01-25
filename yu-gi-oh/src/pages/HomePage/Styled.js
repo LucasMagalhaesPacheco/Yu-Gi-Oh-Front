@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import ImageHome from "../../Assets/Home.png"
 export const HomeStyled = styled.main`
-height: 100vh;
+height: 150vh;
 display: flex;
 flex-direction: column;
 background-image: url(${ImageHome});

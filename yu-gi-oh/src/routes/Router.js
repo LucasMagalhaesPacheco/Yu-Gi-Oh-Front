@@ -7,6 +7,9 @@ import WorldChalicepage from "../pages/WorldChalicePage/WorldChalicepage";
 import GlobalStyle from "../GlobalStyle";
 import {Header} from "../components/Header/Header";
 import {Error} from "../components/Error/Error";
+import FirstEra from "../pages/duelTerminalPage/firstEra/FirstEra";
+import SecondEra from "../pages/duelTerminalPage/secondEra/SecondEra";
+import ThirdAge from "../pages/duelTerminalPage/thirdAge/ThirdAge";
 
 const Router = () => {
    return (
@@ -19,6 +22,9 @@ const Router = () => {
     <Route exact path="/WorldChalice" element={<WorldChalicepage />} />
     <Route exact path="/Branded" element={<BrandedPage />} />
     <Route exact path="*" element={<Error />}  />
+    <Route exact path="/DuelTerminal/FirstAge" element={<FirstEra />}/>
+    <Route exact path="/DuelTerminal/SecondAge" element={<SecondEra />}/>
+    <Route exact path="/DuelTerminal/ThirdAge" element={<ThirdAge />} />
     </Routes>
     </BrowserRouter>
    )
