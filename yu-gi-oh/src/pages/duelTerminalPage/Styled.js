@@ -17,7 +17,6 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 height: 120vh;
-width: 50vw;
 button {
     background-color: #D9C979;
     border: none;
