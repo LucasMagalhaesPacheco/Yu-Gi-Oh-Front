@@ -22,6 +22,14 @@ export const goToFirstAge = (navigate) => {
     navigate("/DuelTerminal/FirstAge")
 }
 
+export const goToAllyOfJustice = (navigate) => {
+    navigate("/DuelTerminal/FirstAge/AllyOfJustice")
+} 
+
+export const goToFlamvell = (navigate) => {
+    navigate("/DuelTerminal/FirstAge/Flamvell")
+}
+
 export const goToSecondAge = (navigate) => {
     navigate("/DuelTerminal/SecondAge")
 }
@@ -29,3 +37,5 @@ export const goToSecondAge = (navigate) => {
 export const goToThirdAge = (navigate) => {
     navigate("/DuelTerminal/ThirdAge")
 }
+
+
