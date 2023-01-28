@@ -1,20 +1,19 @@
 import styled from "styled-components";
 import ImageHeader from '../../Assets/header.png'
 export const HeaderStyled = styled.header`
-max-width: 100%;
+width: 100%;
 padding-top: 0.1rem;
-padding-left: 0.5rem;
+padding-left: 0.1rem;
 align-items: center;
 display: flex;
 justify-content: space-around;
-padding-left: 0.2rem;
 background-image: url(${ImageHeader});
 img{
     width: 12rem;
 }
 
 @media (max-width: 480px) {
-      max-width: 100%;
+      max-width: 100vw;
       display: flex;
       align-items: center;
       background-image: url(${ImageHeader});
