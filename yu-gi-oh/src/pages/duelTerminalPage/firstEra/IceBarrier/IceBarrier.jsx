@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Body, MainContainer } from './styled'
+import { Body, CartsContainer, ImageCart, MainContainer } from './styled'
 import { BASE_URL } from '../../../../constants/BaseUrl'
 
 
@@ -36,16 +36,20 @@ const IceBarrier = () => {
     })
     
     return (
-      <MainContainer key={carts.id}>
-        <img  src={IceBarrierImages} alt={carts.name}/>
-      </MainContainer>
+      <div key={carts.id}>
+        <ImageCart  src={IceBarrierImages} alt={carts.name}/>
+      </div>
     )
   })
 
   return (
-    <Body>
+
+    <MainContainer>
+    <CartsContainer>
     {IceBarrierCarts}
-    </Body>
+    </CartsContainer>
+    </MainContainer>
+    
   )
 }
 
