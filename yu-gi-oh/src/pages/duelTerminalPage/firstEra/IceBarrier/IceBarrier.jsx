@@ -14,8 +14,10 @@ const IceBarrier = () => {
   const getAllCarts = () => {
     
     axios.get(`${BASE_URL}&archetype=${params.name}`)
+    console.log(params.name)
       .then((response) => {
         setCartList(response.data.data)
+        console.log(response)
 
       })
       .catch((err) => {

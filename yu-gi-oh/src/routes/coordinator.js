@@ -39,7 +39,7 @@ export const goToGenex = (navigate) => {
 }
 
 export const goToIceBarrier = (navigate, name) => {
-    navigate(`/DuelTerminal/FirstAge/:${name}`)
+    navigate(`/DuelTerminal/FirstAge/${name}`)
 }
 
 export const goToJurrac = (navigate) => {

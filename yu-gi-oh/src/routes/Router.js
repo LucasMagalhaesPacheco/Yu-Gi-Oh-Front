@@ -38,7 +38,7 @@ const Router = () => {
     <Route exact path="/DuelTerminal/FirstAge/Fabled" element={< Flabled />}/>
     <Route exact path="/DuelTerminal/FirstAge/Flamvell" element={<Flamvell />}/>
     <Route exact path="/DuelTerminal/FirstAge/Genex" element={< Genex />} />
-    <Route exact path="/DuelTerminal/FirstAge/IceBarrier" element={<IceBarrier />}/>
+    <Route exact path="/DuelTerminal/FirstAge/:name" element={<IceBarrier />}/>
     <Route exact path="/DuelTerminal/FirstAge/Jurrac" element={<Jurrac />}/>
     <Route exact path="/DuelTerminal/FirstAge/MistValley" element={<MistValley />}/>
     <Route exact path="/DuelTerminal/FirstAge/Naturia"  element={<Naturia />}/>
