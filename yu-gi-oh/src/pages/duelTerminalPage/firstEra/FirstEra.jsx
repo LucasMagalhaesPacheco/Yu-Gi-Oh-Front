@@ -5,11 +5,12 @@ import { useNavigate } from 'react-router-dom'
 import {goToAllyOfJustice, goToFlamvell, goToFlabed, goToGenex, goToIceBarrier, goToJurrac, goToMistValley, goToNaturia, goToWorms, goToXSaber} from '../../../routes/coordinator'
 const FirstEra = () => {
   const navigate = useNavigate()
+  const iceBarrier = "Ice%20Barrier"
   return (
     <FirstEraContainer>
      <img src={Monster} alt="Dragon Ice Barrier" />
      <ContainerButtons>
-      <ButtonIceBarrier onClick={() => goToIceBarrier(navigate)}>Ice Barrier</ButtonIceBarrier>
+      <ButtonIceBarrier onClick={() => goToIceBarrier(navigate, iceBarrier)}>Ice Barrier</ButtonIceBarrier>
       <ButtonFlamvell>Flamvell</ButtonFlamvell>
       <ButtonMistValley>Mist Valley</ButtonMistValley>
       <ButtonXSaber>X-Saber</ButtonXSaber>

@@ -20,6 +20,7 @@ import MistValley from "../pages/duelTerminalPage/firstEra/MistValley/MistValley
 import Naturia from "../pages/duelTerminalPage/firstEra/Naturia/Naturia";
 import Worms from "../pages/duelTerminalPage/firstEra/Worms/Worms";
 import XSaber from "../pages/duelTerminalPage/firstEra/X-Saber/XSaber";
+import Details from "../pages/Details/Details";
 
 const Router = () => {
    return (
@@ -45,6 +46,7 @@ const Router = () => {
     <Route exact path="/DuelTerminal/FirstAge/XSaber" element={<XSaber />} />
     <Route exact path="/DuelTerminal/SecondAge" element={<SecondEra />}/>
     <Route exact path="/DuelTerminal/ThirdAge" element={<ThirdAge />} />
+    <Route exact path="/Details/:id" element={<Details />}/>
     </Routes>
     </BrowserRouter>
    )
