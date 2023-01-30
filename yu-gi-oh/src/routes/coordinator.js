@@ -38,7 +38,7 @@ export const goToGenex = (navigate) => {
     navigate("/DuelTerminal/FirstAge/Genex")
 }
 
-export const goToIceBarrier = (navigate, name) => {
+export const goToFirstAgeCards = (navigate, name) => {
     navigate(`/DuelTerminal/FirstAge/${name}`)
 }
 

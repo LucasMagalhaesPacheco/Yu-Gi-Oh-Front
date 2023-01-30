@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import IceBarrierImage from '../../../../Assets/IceBarrier.png'
 
 export const MainContainer = styled.main`
 margin-top: 0.5rem;
@@ -26,3 +25,6 @@ border: 0.0625rem solid black;
 min-height: 17.3125rem;
 min-width: 12.5rem;
 height: 16.3125rem;`
+
+export const H1 = styled.h1`
+text-align:center;`

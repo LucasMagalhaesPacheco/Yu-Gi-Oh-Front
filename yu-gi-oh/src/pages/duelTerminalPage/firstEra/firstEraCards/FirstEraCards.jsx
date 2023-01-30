@@ -5,39 +5,39 @@ import { BASE_URL } from '../../../../constants/BaseUrl'
 import { useNavigate, useParams } from 'react-router-dom'
 import { goToDetails } from '../../../../routes/coordinator'
 
-const IceBarrier = () => {
+const FirstEraCards = () => {
   const navigate = useNavigate()
   const params = useParams()
   const [cartList, setCartList] = useState([])
-
+  let name = params.name.replace(/\s+/g,"%20")
+  
 
   const getAllCarts = () => {
     
-    axios.get(`${BASE_URL}&archetype=${params.name}`)
-    console.log(params.name)
+    axios.get(`${BASE_URL}&archetype=${name}`)
+      
       .then((response) => {
         setCartList(response.data.data)
-        console.log(response)
 
       })
       .catch((err) => {
-        alert(err.response.data.message)
-        console.log(err)
+        alert(err.message)
+        
       })
   }
   useEffect(() => {
     getAllCarts()
   }, [])
 
-  const IceBarrierCarts = cartList && cartList.map((carts) => {
+  const totalCards = cartList && cartList.map((cards) => {
 
-    const IceBarrierImages = carts.card_images && carts.card_images.map((img) => {
+    const cardsImg = cards.card_images && cards.card_images.map((img) => {
       return img.image_url
     })
 
     return (
-      <div key={carts.id}>
-        <ImageCart src={IceBarrierImages}  alt={carts.name} onClick={() => goToDetails(navigate, carts.id)}/>
+      <div key={cards.id}>
+        <ImageCart src={cardsImg}  alt={cards.name} onClick={() => goToDetails(navigate, cards.id)}/>
       </div>
     )
   })
@@ -46,13 +46,11 @@ const IceBarrier = () => {
 
     <MainContainer>
       <CartsContainer>
-        {IceBarrierCarts}
-
-        VBBBBBBBBBBBBBBBB
+        {totalCards}
       </CartsContainer>
     </MainContainer>
 
   )
 }
 
-export default IceBarrier
+export default FirstEraCards
