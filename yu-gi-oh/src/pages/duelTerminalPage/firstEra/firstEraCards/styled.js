@@ -26,5 +26,3 @@ min-height: 17.3125rem;
 min-width: 12.5rem;
 height: 16.3125rem;`
 
-export const H1 = styled.h1`
-text-align:center;`
