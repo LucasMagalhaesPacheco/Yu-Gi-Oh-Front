@@ -3,23 +3,22 @@ import { useNavigate } from 'react-router-dom'
 import { ButtonConstelar, ButtonEvilswarm, ButtonGemKnight, ButtonGishiki, ButtonGusto, ButtonLaval, ButtonSteelWarm, ButtonVylon, SecondAgeButtons, SecondAgeContainer } from './styled'
 import { goToSecondAgeCards } from '../../../routes/coordinator'
 import DuelTerminal from '../../../Assets/DuelTerminalSecondAge.png'
-import { ContainerButtons } from '../Styled'
 const SecondEra = () => {
   const navigate = useNavigate()
   return (
   <SecondAgeContainer>
     <img src={DuelTerminal} alt="​​Messier 7 Pleiades" />
     <SecondAgeButtons>
-    <ButtonLaval>Laval</ButtonLaval>
-    <ButtonGemKnight>Gem-Knight</ButtonGemKnight>
-    <ButtonGusto>Gusto</ButtonGusto>
-    <ButtonGishiki>Gishiki</ButtonGishiki>
+    <ButtonLaval onClick={() => goToSecondAgeCards(navigate, "Laval")}>Laval</ButtonLaval>
+    <ButtonGemKnight onClick={() => goToSecondAgeCards(navigate, "Gem-")}>Gem-Knight</ButtonGemKnight>
+    <ButtonGusto onClick={() =>  goToSecondAgeCards(navigate, "Gusto")}>Gusto</ButtonGusto>
+    <ButtonGishiki onClick={() => goToSecondAgeCards(navigate, "Gishki")}>Gishki</ButtonGishiki>
     </SecondAgeButtons>
     <SecondAgeButtons>
-    <ButtonSteelWarm>Steelswarm</ButtonSteelWarm>
-    <ButtonVylon>Vylon</ButtonVylon>
-    <ButtonEvilswarm>Evilswarm</ButtonEvilswarm>
-    <ButtonConstelar>Constelar</ButtonConstelar>
+    <ButtonSteelWarm onClick={() => goToSecondAgeCards(navigate, "Steelswarm ")}>Steelswarm</ButtonSteelWarm>
+    <ButtonVylon onClick={() => goToSecondAgeCards(navigate, "Vylon")}>Vylon</ButtonVylon>
+    <ButtonEvilswarm onClick={() => goToSecondAgeCards(navigate, "Lswarm")}>Evilswarm</ButtonEvilswarm>
+    <ButtonConstelar onClick={() => goToSecondAgeCards(navigate, "Constellar")}>Constellar</ButtonConstelar>
     </SecondAgeButtons>
   </SecondAgeContainer>
    
