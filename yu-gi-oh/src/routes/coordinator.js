@@ -22,44 +22,9 @@ export const goToFirstAge = (navigate) => {
     navigate("/DuelTerminal/FirstAge")
 }
 
-export const goToAllyOfJustice = (navigate) => {
-    navigate("/DuelTerminal/FirstAge/AllyOfJustice")
-} 
 
-export const goToFlamvell = (navigate) => {
-    navigate("/DuelTerminal/FirstAge/Flamvell")
-}
-
-export const goToFlabed = (navigate) => {
-   navigate("/DuelTerminal/FirstAge/Fabled")
-}
-
-export const goToGenex = (navigate) => {
-    navigate("/DuelTerminal/FirstAge/Genex")
-}
-
-export const goToIceBarrier = (navigate) => {
-    navigate("/DuelTerminal/FirstAge/IceBarrier")
-}
-
-export const goToJurrac = (navigate) => {
-    navigate("/DuelTerminal/FirstAge/Jurrac")
-}
-
-export const goToMistValley = (navigate) => {
-    navigate("/DuelTerminal/FirstAge/MistValley")
-}
-
-export const goToNaturia = (navigate) => {
-    navigate("/DuelTerminal/FirstAge/Naturia")
-}
-
-export const goToWorms = (navigate) => {
-    navigate("/DuelTerminal/FirstAge/Worms")
-}
-
-export const goToXSaber = (navigate) => {
-    navigate("/DuelTerminal/FirstAge/XSaber")
+export const goToAgeCards = (navigate, age, name) => {
+    navigate(`/DuelTerminal/${age}/${name}`)
 }
 
 
@@ -67,8 +32,12 @@ export const goToSecondAge = (navigate) => {
     navigate("/DuelTerminal/SecondAge")
 }
 
+
 export const goToThirdAge = (navigate) => {
     navigate("/DuelTerminal/ThirdAge")
 }
 
+export const goToDetails = (navigate, id) => {
+    navigate(`/Details/${id}`)
+}
 
