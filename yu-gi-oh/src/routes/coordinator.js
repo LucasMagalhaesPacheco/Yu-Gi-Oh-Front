@@ -23,8 +23,8 @@ export const goToFirstAge = (navigate) => {
 }
 
 
-export const goToFirstAgeCards = (navigate, name) => {
-    navigate(`/DuelTerminal/FirstAge/${name}`)
+export const goToAgeCards = (navigate, age, name) => {
+    navigate(`/DuelTerminal/${age}/${name}`)
 }
 
 
@@ -32,9 +32,7 @@ export const goToSecondAge = (navigate) => {
     navigate("/DuelTerminal/SecondAge")
 }
 
-export const goToSecondAgeCards = (navigate, name) => {
-    navigate(`/DuelTerminal/SecondAge/${name}`)
-}
+
 export const goToThirdAge = (navigate) => {
     navigate("/DuelTerminal/ThirdAge")
 }

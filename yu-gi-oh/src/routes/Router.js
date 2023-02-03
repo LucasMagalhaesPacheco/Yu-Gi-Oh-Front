@@ -11,8 +11,9 @@ import FirstEra from "../pages/duelTerminalPage/firstEra/FirstEra";
 import SecondEra from "../pages/duelTerminalPage/secondEra/SecondEra";
 import ThirdAge from "../pages/duelTerminalPage/thirdAge/ThirdAge";
 import Details from "../pages/Details/Details";
-import FirstEraCards from "../pages/duelTerminalPage/firstEra/firstEraCards/FirstEraCards";
-import CardsSecondEra from "../pages/duelTerminalPage/secondEra/cardsSecondEra/CardsSecondEra";
+import AgeCards from "../pages/duelTerminalPage/AgeCards/AgeCards";
+
+
 
 const Router = () => {
    return (
@@ -26,9 +27,8 @@ const Router = () => {
     <Route exact path="/Branded" element={<BrandedPage />} />
     <Route exact path="*" element={<Error />}  />
     <Route exact path="/DuelTerminal/FirstAge" element={<FirstEra />}/>
-    <Route exact path="/DuelTerminal/FirstAge/:name" element={<FirstEraCards />}/>
+    <Route exact path="/DuelTerminal/:age/:name" element={<AgeCards />}/>
     <Route exact path="/DuelTerminal/SecondAge" element={<SecondEra />}/>
-    <Route exact path="/DuelTerminal/SecondAge/:name" element={<CardsSecondEra />} />
     <Route exact path="/DuelTerminal/ThirdAge" element={<ThirdAge />} />
     <Route exact path="/Details/:id" element={<Details />}/>
     </Routes>
