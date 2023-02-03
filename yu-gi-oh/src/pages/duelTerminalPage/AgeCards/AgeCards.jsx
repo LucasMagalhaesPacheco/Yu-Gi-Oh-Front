@@ -18,6 +18,7 @@ const AgeCards = () => {
       
       .then((response) => {
         setCartList(response.data.data)
+        console.log(response.data.data)
 
       })
       .catch((err) => {
@@ -31,14 +32,9 @@ const AgeCards = () => {
 
   const totalCards = cartList && cartList.map((cards) => {
 
-    const cardsImg = cards.card_images && cards.card_images.map((img) => {
-        return img.image_url_cropped
-      
-    })
-
     return (
       <div key={cards.id}>
-        <ImageCart src={cardsImg}  alt={cards.name} onClick={() => goToDetails(navigate, cards.id)}/>
+        <ImageCart src={cards.card_images[0].image_url_cropped}  alt={cards.name} onClick={() => goToDetails(navigate, cards.id)}/>
       </div>
     )
   })
