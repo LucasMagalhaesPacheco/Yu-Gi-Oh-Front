@@ -18,6 +18,10 @@ export const goToBranded = (navigate) => {
     navigate("/Branded")
 }
 
+export const goToBrandedCards = (navigate, name) => {
+    navigate(`/Branded/${name}`)
+}
+
 export const goToPreviousPage = (navigate) => {
     navigate(-1)
 }

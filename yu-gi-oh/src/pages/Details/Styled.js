@@ -79,11 +79,13 @@ display: flex;
 
   export const H1 = styled.h1`
   font-size: 25px;
-  text-align: center;`
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;`
 
   export const Text = styled.p`
   font-size: 15px;
-  margin-top: 1px;`
+  margin-top: 1px;
+  font-family: Georgia, 'Times New Roman', Times, serif;`
 
   export const DisplayCard = styled.ul`
   padding-left: 0;
@@ -105,5 +107,6 @@ display: flex;
     border-radius: 5px;
     color: white;
     background-color: #b2591a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   `
