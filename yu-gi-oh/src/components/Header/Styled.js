@@ -47,3 +47,22 @@ export const HeaderButton = styled.button`
         display: none;
     }
 `
+
+export const HomeButton = styled.button`
+ background-color: #0F4ABF;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.5rem;
+    transition-duration: 0.5s;
+    :hover {
+        color: white;
+        text-shadow: #0d3bb0 0.5em 0.5em 0.5em;
+        background-color:#0d3bb0; ;
+} 
+  
+`
