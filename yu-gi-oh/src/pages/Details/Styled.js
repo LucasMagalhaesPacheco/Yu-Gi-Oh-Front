@@ -18,24 +18,34 @@ display: flex;
 
    
 @media screen and (max-width: 992px) {
-    max-width: 680px;
-        height: 400px;
+    max-width: 42.5rem;
+        height: 25rem;
   }
   
   @media screen and (max-width: 768px) {
-    min-height: 500px;
+    min-height: 31.25rem;
     height: auto;
-    margin: 180px auto;
+    margin: 3.5rem auto;
   }
   
   
   @media screen and (max-height: 500px) and (min-width: 992px) {
-        height: 350px;
+        height: 21.875rem;
   }
   
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    align-items: center;
+    padding: 2px;
   }
+
+  @media screen and (max-width: 480px) {
+    flex-direction:column;
+    align-items: center;
+    padding: 2px;
+  }
+    
+  
   `
 
   export const ImgStyled = styled.img`
@@ -52,8 +62,15 @@ display: flex;
     transform: translateX(8px) scale(0.7);
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     flex-wrap: wrap;
+    width: 20%;
+    height: 50%;
+    align-items: center;
+    transform:translateX(0);
+    transition: none;
+    display: flex;
+    display: none;
   }
   `
 
@@ -67,9 +84,9 @@ display: flex;
       width: 55%;
     }
     @media screen and (max-width: 768px) {
-    margin-top: -80px;
     text-align: center;
-    padding: 0 30px;
+    padding:30px;
+    padding-right: 1rem;
     }
     
     @media screen and (max-width: 576px) {
@@ -79,11 +96,13 @@ display: flex;
 
   export const H1 = styled.h1`
   font-size: 25px;
-  text-align: center;`
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;`
 
   export const Text = styled.p`
   font-size: 15px;
-  margin-top: 1px;`
+  margin-top: 1px;
+  font-family: Georgia, 'Times New Roman', Times, serif;`
 
   export const DisplayCard = styled.ul`
   padding-left: 0;
@@ -105,5 +124,6 @@ display: flex;
     border-radius: 5px;
     color: white;
     background-color: #b2591a;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   `

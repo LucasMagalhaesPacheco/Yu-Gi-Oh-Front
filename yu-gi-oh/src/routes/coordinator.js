@@ -10,8 +10,16 @@ export const goToWorldChalice = (navigate) => {
     navigate("/WorldChalice")
 }
 
+export const goToWorldChaliceCards = (navigate, name) => {
+    navigate(`/WorldChalice/${name}`)
+}
+
 export const goToBranded = (navigate) => {
     navigate("/Branded")
+}
+
+export const goToBrandedCards = (navigate, name) => {
+    navigate(`/Branded/${name}`)
 }
 
 export const goToPreviousPage = (navigate) => {

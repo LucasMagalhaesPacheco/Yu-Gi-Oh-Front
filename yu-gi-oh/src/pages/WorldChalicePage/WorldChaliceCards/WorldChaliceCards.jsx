@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
-import { CartsContainer, ImageCart, MainContainer } from './styled'
-import { BASE_URL } from '../../../constants/BaseUrl'
+import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import { BASE_URL } from '../../../constants/BaseUrl'
+import { CartsContainer, ImageCart, MainContainer } from './styled'
 import { goToDetails } from '../../../routes/coordinator'
+import axios from 'axios'
 
-const AgeCards = () => {
+
+const WorldChaliceCards = () => {
   const navigate = useNavigate()
   const params = useParams()
   const [cartList, setCartList] = useState([])
@@ -46,8 +47,9 @@ const AgeCards = () => {
         {totalCards}
       </CartsContainer>
     </MainContainer>
+    
 
   )
 }
 
-export default AgeCards
+export default WorldChaliceCards

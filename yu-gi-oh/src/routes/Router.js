@@ -12,6 +12,8 @@ import SecondEra from "../pages/duelTerminalPage/secondEra/SecondEra";
 import ThirdAge from "../pages/duelTerminalPage/thirdAge/ThirdAge";
 import Details from "../pages/Details/Details";
 import AgeCards from "../pages/duelTerminalPage/AgeCards/AgeCards";
+import WorldChaliceCards from "../pages/WorldChalicePage/WorldChaliceCards/WorldChaliceCards";
+import BrandedCards from "../pages/brandedPage/BrandedCards/BrandedCards";
 
 
 
@@ -24,7 +26,9 @@ const Router = () => {
     <Route index exact default path="/" element={< HomePage />}/>
     <Route exact path="/DuelTerminal" element={<DuelTerminalPage />}/>
     <Route exact path="/WorldChalice" element={<WorldChalicepage />} />
+    <Route exact path="/WorldChalice/:name" element={<WorldChaliceCards />}/>
     <Route exact path="/Branded" element={<BrandedPage />} />
+    <Route exact path="/Branded/:name" element={<BrandedCards />}/>
     <Route exact path="*" element={<Error />}  />
     <Route exact path="/DuelTerminal/FirstAge" element={<FirstEra />}/>
     <Route exact path="/DuelTerminal/:age/:name" element={<AgeCards />}/>

@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Logo from '../../Assets/logo.png'
 import { goToHome, goToBranded, goToDuelTerminal, goToWorldChalice, goToPreviousPage  } from '../../routes/coordinator'
-import { HeaderButton, HeaderStyled } from './Styled'
+import { HeaderButton, HeaderStyled, HomeButton } from './Styled'
 export const Header = () => {
  const navigate = useNavigate()
 
@@ -12,7 +12,7 @@ export const Header = () => {
     <HeaderButton onClick={() => goToBranded(navigate)}>Branded</HeaderButton>
     <HeaderButton onClick={() => goToDuelTerminal(navigate)}>Duel Terminal</HeaderButton>
     <HeaderButton onClick={() => goToWorldChalice(navigate)}>World Chalice</HeaderButton>
-    <HeaderButton onClick={() => goToPreviousPage(navigate)}>Voltar</HeaderButton>
+    <HomeButton onClick={() => goToPreviousPage(navigate)}>Voltar</HomeButton>
     </HeaderStyled>
   )
 }
